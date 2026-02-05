@@ -97,6 +97,14 @@ section {
   max-width: 500px;
   margin: auto;
 }
+.disclaimer {
+  font-size: 14px;
+  color: #555;
+  padding: 20px;
+  background: #f1f1f1;
+  margin: 20px;
+  border-radius: 8px;
+}
 
 .trust li {
   padding: 8px 0;
