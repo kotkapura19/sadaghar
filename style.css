@@ -9,3 +9,19 @@
   margin-top: 10px;
 }
 
+.whatsapp-btn {
+  background: #1fa463;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.whatsapp-btn:hover {
+  background: #178a52;
+  transform: translateY(-2px);
+}
+section {
+  margin-top: 40px;
+}
