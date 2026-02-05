@@ -1,173 +1,109 @@
 <!DOCTYPE html>
-<html lang="pa">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ਸਾਦਾ ਘਰ | Punjabi Reselling Website</title>
+  <title>Sadaghar – Product Catalog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:#f7f7f7;
-      color:#222;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
-    header{
-      background:#0f5132;
-      color:#fff;
-      padding:16px;
-      text-align:center;
+
+    h1 {
+      text-align: center;
+      padding: 15px;
+      background: #ff4d6d;
+      color: white;
+      margin: 0;
     }
-    nav a{
-      color:#fff;
-      margin:0 10px;
-      text-decoration:none;
-      font-weight:600;
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 15px;
     }
-    .hero{
-      background:#e9f5ef;
-      padding:30px 15px;
-      text-align:center;
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .btn{
-      display:inline-block;
-      background:#198754;
-      color:#fff;
-      padding:10px 18px;
-      border-radius:6px;
-      text-decoration:none;
-      margin-top:10px;
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 10px;
     }
-    section{
-      padding:25px 15px;
-      background:#fff;
-      margin:12px;
-      border-radius:10px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 8px 0;
     }
-    h2{
-      color:#0f5132;
+
+    .price {
+      color: green;
+      font-size: 18px;
+      font-weight: bold;
     }
-    footer{
-      background:#0f5132;
-      color:#fff;
-      text-align:center;
-      padding:12px;
-      font-size:14px;
+
+    .rating {
+      font-size: 13px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>ਸਾਦਾ ਘਰ</h1>
-  <p>ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਦੀਆਂ ਚੁਣੀਂਦੀਆਂ ਚੀਜ਼ਾਂ</p>
-  <nav>
-    <a href="#home">ਮੁੱਖ ਪੰਨਾ</a>
-    <a href="#products">ਉਤਪਾਦ</a>
-    <a href="#order">ਆਰਡਰ ਕਿਵੇਂ ਕਰੀਏ</a>
-    <a href="#contact">ਸੰਪਰਕ</a>
-  </nav>
-</header>
+<h1>🛍️ Sadaghar Product Catalog</h1>
 
-<div class="hero" id="home">
-  <h2>ਸਾਦਾ ਘਰ ‘ਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ</h2>
-  <p>
-    ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਲਿਆਉਂਦੇ ਹਾਂ ਭਰੋਸੇਯੋਗ, ਕਿਫਾਇਤੀ ਅਤੇ ਟ੍ਰੈਂਡਿੰਗ ਉਤਪਾਦ —
-    ਸਿੱਧੇ ਤੁਹਾਡੇ ਘਰ ਤੱਕ।
-  </p>
-  <a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp ‘ਤੇ ਆਰਡਰ ਕਰੋ</a>
-</div>
+<div class="catalog">
 
-<section class="products">
-  <h2>ਸਾਡੇ ਉਤਪਾਦ</h2>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product 1">
-      <h3>ਲੇਡੀਜ਼ ਕੁਰਤੀ</h3>
-      <p class="price">₹799</p>
-      <a class="order-btn"
-         href="https://wa.me/91XXXXXXXXXX?text=ਮੈਨੂੰ ਇਹ ਉਤਪਾਦ ਮੰਗਵਾਉਣਾ ਹੈ: ਲੇਡੀਜ਼ ਕੁਰਤੀ (₹799)"
-         target="_blank">
-        WhatsApp ਤੇ Order ਕਰੋ
-      </a>
+  <!-- Product 1 -->
+  <div class="card">
+    <img src="tent.jpg" alt="Kids Play Tent">
+    <div class="title">
+      P SQUARE So Sweet Home Tent – Kids Play Tent
     </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product 2">
-      <h3>ਕਿਚਨ ਆਈਟਮ</h3>
-      <p class="price">₹499</p>
-      <a class="order-btn"
-         href="https://wa.me/91XXXXXXXXXX?text=ਮੈਨੂੰ ਇਹ ਉਤਪਾਦ ਮੰਗਵਾਉਣਾ ਹੈ: ਕਿਚਨ ਆਈਟਮ (₹499)"
-         target="_blank">
-        WhatsApp ਤੇ Order ਕਰੋ
-      </a>
-    </div>
-
+    <div class="price">₹251</div>
+    <div class="rating">⭐ 4.1 | 6919 Ratings</div>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+      Order on WhatsApp
+    </a>
   </div>
-  <div class="product-card">
-  <h3>ਬੱਚਿਆਂ ਲਈ ਰੰਗੀਨ ਪਲੇ ਟੈਂਟ ਹਾਊਸ (Jumbo Size)</h3>
-  <p class="price">₹499</p>
-  <p style="font-size:14px;">
-    ਹਲਕਾ ਵਜ਼ਨ | ਵਾਟਰ ਪ੍ਰੂਫ | 3–10 ਸਾਲ ਦੇ ਬੱਚਿਆਂ ਲਈ <br>
-    ਘਰ ਅਤੇ ਬਾਹਰ ਦੋਵੇਂ ਥਾਵਾਂ ਲਈ ਉਚਿਤ
-     <img src="tent.jpg" alt="Kids Play Tent" style="width:250px; border-radius:12px;""ਬੱਚਿਆਂ ਲਈ ਪਲੇ ਟੈਂਟ ਹਾਊਸ">
-  </p>
-  <a class="order-btn"
-     href="https://wa.me/91XXXXXXXXXX?text=ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ 🙏%0Aਮੈਂ ਇਹ ਉਤਪਾਦ ਮੰਗਵਾਉਣਾ ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹਾਂ:%0A👉 ਬੱਚਿਆਂ ਲਈ ਰੰਗੀਨ ਪਲੇ ਟੈਂਟ ਹਾਊਸ (Jumbo Size)%0Aਕੀਮਤ: ₹499"
-     target="_blank">
-     WhatsApp ‘ਤੇ ਆਰਡਰ ਕਰੋ
-  </a>
+
+  <!-- Product 2 -->
+  <div class="card">
+    <img src="tent.jpg" alt="Kids Tent">
+    <div class="title">Kids Jumbo Size Play Tent</div>
+    <div class="price">₹299</div>
+    <div class="rating">⭐ 4.0 | 1200 Ratings</div>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+      Order on WhatsApp
+    </a>
+  </div>
+
 </div>
-
-</section>
-  <section class="trust">
-  <h2>ਭਰੋਸਾ ਅਤੇ ਸਹੂਲਤਾਂ</h2>
-  <ul>
-    <li>✔ Cash on Delivery ਉਪਲਬਧ</li>
-    <li>✔ ਭਰੋਸੇਯੋਗ ਸਪਲਾਇਰਾਂ ਤੋਂ ਉਤਪਾਦ</li>
-    <li>✔ WhatsApp ਰਾਹੀਂ ਸਿੱਧਾ ਸੰਪਰਕ</li>
-    <li>✔ ਆਰਡਰ Confirm ਹੋਣ ਮਗਰੋਂ ਹੀ ਡਿਲੀਵਰੀ</li>
-  </ul>
-</section>
-
-
-<section id="order">
-  <h2>ਆਰਡਰ ਕਿਵੇਂ ਕਰੀਏ?</h2>
-  <ol>
-    <li>ਉਤਪਾਦ ਚੁਣੋ</li>
-    <li>“Order Now” ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰੋ</li>
-    <li>WhatsApp ‘ਤੇ ਨਾਮ, ਪਤਾ ਅਤੇ ਨੰਬਰ ਭੇਜੋ</li>
-    <li>ਆਰਡਰ Confirm ਕੀਤਾ ਜਾਵੇਗਾ</li>
-    <li>ਉਤਪਾਦ ਤੁਹਾਡੇ ਘਰ ਡਿਲੀਵਰ ਹੋਵੇਗਾ</li>
-  </ol>
-  <p><strong>ਭੁਗਤਾਨ:</strong> ਡਿਲੀਵਰੀ ਵੇਲੇ (Cash on Delivery)</p>
-</section>
-
-<section id="contact">
-  <h2>ਸੰਪਰਕ ਕਰੋ</h2>
-  <p>📱 WhatsApp: 91XXXXXXXXXX</p>
-  <p>📷 Instagram: @sadaghar</p>
-  <p>📧 Email: support@sadaghar.in</p>
-</section>
-  <section class="disclaimer">
-  <p>
-    ⚠️ ਅਸਵੀਕਰਨ: ਅਸੀਂ ਉਤਪਾਦ ਤੀਜੇ ਪੱਖੀ ਸਪਲਾਇਰਾਂ ਤੋਂ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹਾਂ।
-    ਉਤਪਾਦਾਂ ਦੇ ਨਾਂ ਅਤੇ ਤਸਵੀਰਾਂ ਸਿਰਫ਼ ਪਛਾਣ ਅਤੇ ਵਿਕਰੀ ਦੇ ਉਦੇਸ਼ ਲਈ ਵਰਤੀਆਂ ਗਈਆਂ ਹਨ।
-    ਇਹ ਵੈਬਸਾਈਟ ਕਿਸੇ ਵੀ ਬ੍ਰਾਂਡ ਜਾਂ ਕੰਪਨੀ ਨਾਲ ਸਿੱਧੀ ਤਰ੍ਹਾਂ ਸੰਬੰਧਿਤ ਨਹੀਂ ਹੈ।
-  </p>
-</section>
-
-
-<footer>
-  © <span id="year"></span> ਸਾਦਾ ਘਰ | ਸਭ ਹੱਕ ਰਾਖਵੇਂ ਹਨ
-</footer>
-
-<script>
-  document.getElementById("year").innerText = new Date().getFullYear();
-</script>
 
 </body>
 </html>
