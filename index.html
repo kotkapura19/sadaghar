@@ -2,142 +2,120 @@
 <html lang="pa">
 <head>
   <meta charset="UTF-8">
-  <title>ਸਾਡਾ ਘਰ – Punjabi Reselling Store</title>
-  < meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ਸਾਦਾ ਘਰ | Punjabi Reselling Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:#f7f7f7;
+      color:#222;
     }
-    header {
-      background: #145a32;
-      color: white;
-      padding: 30px;
-      text-align: center;
+    header{
+      background:#0f5132;
+      color:#fff;
+      padding:16px;
+      text-align:center;
     }
-    nav {
-      margin-top: 10px;
+    nav a{
+      color:#fff;
+      margin:0 10px;
+      text-decoration:none;
+      font-weight:600;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    .hero{
+      background:#e9f5ef;
+      padding:30px 15px;
+      text-align:center;
     }
-    .hero {
-      background: #eafaf1;
-      padding: 40px;
-      text-align: center;
+    .btn{
+      display:inline-block;
+      background:#198754;
+      color:#fff;
+      padding:10px 18px;
+      border-radius:6px;
+      text-decoration:none;
+      margin-top:10px;
     }
-    .hero button {
-      background: #1abc9c;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
+    section{
+      padding:25px 15px;
+      background:#fff;
+      margin:12px;
+      border-radius:10px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
     }
-    .container {
-      padding: 30px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    h2{
+      color:#0f5132;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card img {
-      max-width: 100%;
-      height: 200px;
-      object-fit: contain;
-    }
-    .price {
-      color: green;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .order-btn {
-      background: #25d366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      border-radius: 5px;
-    }
-    footer {
-      background: #145a32;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+    footer{
+      background:#0f5132;
+      color:#fff;
+      text-align:center;
+      padding:12px;
+      font-size:14px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>ਸਾਡਾ ਘਰ</h1>
-  <p>ਘਰ ਦੀ ਹਰ ਲੋੜ – ਭਰੋਸੇ ਨਾਲ</p>
+  <h1>ਸਾਦਾ ਘਰ</h1>
+  <p>ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਦੀਆਂ ਚੁਣੀਂਦੀਆਂ ਚੀਜ਼ਾਂ</p>
   <nav>
-    <a href="#">ਮੁੱਖ ਸਫ਼ਾ</a>
+    <a href="#home">ਮੁੱਖ ਪੰਨਾ</a>
     <a href="#products">ਉਤਪਾਦ</a>
-    <a href="#contact">ਸੰਪਰਕ ਕਰੋ</a>
+    <a href="#order">ਆਰਡਰ ਕਿਵੇਂ ਕਰੀਏ</a>
+    <a href="#contact">ਸੰਪਰਕ</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h2>ਸਾਡਾ ਘਰ ‘ਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ</h2>
-  <p>ਘਰੇਲੂ, ਬੱਚਿਆਂ ਅਤੇ ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਵਾਲੇ ਉਤਪਾਦ – ਸਿੱਧੇ WhatsApp ‘ਤੇ ਆਰਡਰ</p>
-  <button onclick="window.location.href='#products'">ਉਤਪਾਦ ਵੇਖੋ</button>
-</section>
-
-<section class="container" id="products">
-
- <div class="card">
-  <img src="images/tent.png" alt="ਬੱਚਿਆਂ ਲਈ ਖੇਡਣ ਵਾਲਾ ਟੈਂਟ">
-
-  <h3>ਬੱਚਿਆਂ ਲਈ ਖੇਡਣ ਵਾਲਾ ਟੈਂਟ (P-Square ਮਾਡਲ)</h3>
-
+<div class="hero" id="home">
+  <h2>ਸਾਦਾ ਘਰ ‘ਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ</h2>
   <p>
-    ਇਹ ਟੈਂਟ ਬੱਚਿਆਂ ਦੀ ਖੇਡ ਅਤੇ ਰਚਨਾਤਮਕਤਾ ਨੂੰ ਵਧਾਉਂਦਾ ਹੈ।
-    ਘਰ ਅੰਦਰ ਜਾਂ ਬਾਹਰ ਆਸਾਨੀ ਨਾਲ ਲਗਾਇਆ ਜਾ ਸਕਦਾ ਹੈ।
-    ਪਾਣੀ ਰੋਧੀ ਅਤੇ ਹਲਕੇ ਮਟੀਰੀਅਲ ਨਾਲ ਤਿਆਰ ਕੀਤਾ ਗਿਆ।
-    ਬੱਚਿਆਂ ਲਈ ਸੁਰੱਖਿਅਤ ਅਤੇ ਮਜ਼ੇਦਾਰ ਖੇਡ ਦਾ ਸਾਧਨ।
+    ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਲਿਆਉਂਦੇ ਹਾਂ ਭਰੋਸੇਯੋਗ, ਕਿਫਾਇਤੀ ਅਤੇ ਟ੍ਰੈਂਡਿੰਗ ਉਤਪਾਦ —
+    ਸਿੱਧੇ ਤੁਹਾਡੇ ਘਰ ਤੱਕ।
   </p>
-
-  <p class="price">₹251</p>
-
-  <p>⭐ 4.1 | 6919 ਸਮੀਖਿਆਵਾਂ</p>
-
-  <a class="order-btn"
-     href="https://wa.me/91XXXXXXXXXX?text=ਮੈਂ ਬੱਚਿਆਂ ਲਈ ਖੇਡਣ ਵਾਲਾ ਟੈਂਟ ਆਰਡਰ ਕਰਨਾ ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹਾਂ">
-     WhatsApp ‘ਤੇ ਆਰਡਰ ਕਰੋ
-  </a>
+  <a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp ‘ਤੇ ਆਰਡਰ ਕਰੋ</a>
 </div>
 
-
+<section id="products">
+  <h2>ਸਾਡੇ ਉਤਪਾਦ</h2>
+  <ul>
+    <li>ਘਰੇਲੂ ਵਰਤੋਂ ਦੀਆਂ ਚੀਜ਼ਾਂ</li>
+    <li>ਰੋਜ਼ਾਨਾ ਦੀ ਲੋੜ ਦਾ ਸਮਾਨ</li>
+    <li>ਟ੍ਰੈਂਡਿੰਗ ਉਤਪਾਦ</li>
+    <li>ਖਾਸ ਆਫਰ ਵਾਲੀਆਂ ਚੀਜ਼ਾਂ</li>
+  </ul>
+  <p>ਹਰ ਉਤਪਾਦ WhatsApp ਰਾਹੀਂ ਆਰਡਰ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।</p>
 </section>
 
-<section class="hero" id="contact">
-  <h2>ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</h2>
-  <p>ਆਰਡਰ ਕਰਨ ਲਈ ਸਿੱਧਾ WhatsApp ਕਰੋ</p>
-  <a class="order-btn" href="https://wa.me/91XXXXXXXXXX">ਹੁਣ ਸੰਪਰਕ ਕਰੋ</a>
+<section id="order">
+  <h2>ਆਰਡਰ ਕਿਵੇਂ ਕਰੀਏ?</h2>
+  <ol>
+    <li>ਉਤਪਾਦ ਚੁਣੋ</li>
+    <li>“Order Now” ਬਟਨ ‘ਤੇ ਕਲਿੱਕ ਕਰੋ</li>
+    <li>WhatsApp ‘ਤੇ ਨਾਮ, ਪਤਾ ਅਤੇ ਨੰਬਰ ਭੇਜੋ</li>
+    <li>ਆਰਡਰ Confirm ਕੀਤਾ ਜਾਵੇਗਾ</li>
+    <li>ਉਤਪਾਦ ਤੁਹਾਡੇ ਘਰ ਡਿਲੀਵਰ ਹੋਵੇਗਾ</li>
+  </ol>
+  <p><strong>ਭੁਗਤਾਨ:</strong> ਡਿਲੀਵਰੀ ਵੇਲੇ (Cash on Delivery)</p>
 </section>
-  
-<footer style="background:#f1f1f1; padding:15px; text-align:center; font-size:14px; color:#555;">
-  ਨੋਟ: ਇਸ ਵੈਬਸਾਈਟ ‘ਤੇ ਵਰਤੇ ਗਏ ਸਾਰੇ ਉਤਪਾਦ ਅਤੇ ਬ੍ਰਾਂਡ ਨਾਮ ਸਿਰਫ਼ ਪਹਿਚਾਣ ਅਤੇ ਜਾਣਕਾਰੀ ਲਈ ਹਨ। ਅਸੀਂ ਕਿਸੇ ਵੀ ਬ੍ਰਾਂਡ ਜਾਂ ਕੰਪਨੀ ਨਾਲ ਸਿੱਧੇ ਤੌਰ ‘ਤੇ ਜੁੜੇ ਨਹੀਂ ਹਾਂ।
-</footer>
+
+<section id="contact">
+  <h2>ਸੰਪਰਕ ਕਰੋ</h2>
+  <p>📱 WhatsApp: 91XXXXXXXXXX</p>
+  <p>📷 Instagram: @sadaghar</p>
+  <p>📧 Email: support@sadaghar.in</p>
+</section>
+
 <footer>
-  
-  <p>© 2026 ਸਾਡਾ ਘਰ | Punjabi Reselling Store</p>
+  © <span id="year"></span> ਸਾਦਾ ਘਰ | ਸਭ ਹੱਕ ਰਾਖਵੇਂ ਹਨ
 </footer>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear();
+</script>
 
 </body>
 </html>
