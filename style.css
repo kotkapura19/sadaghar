@@ -78,3 +78,27 @@ section {
 .order-btn:hover {
   background: #178a52;
 }
+.trust {
+  background: #e9f5ef;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin: 40px 15px;
+}
+
+.trust h2 {
+  text-align: center;
+  color: #0f5132;
+  margin-bottom: 15px;
+}
+
+.trust ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: auto;
+}
+
+.trust li {
+  padding: 8px 0;
+  font-size: 16px;
+}
