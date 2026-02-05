@@ -3,4 +3,9 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
 
